@@ -1,0 +1,80 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 112px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.auth {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-left: 30px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.nav:hover {
+    color: rgb(221, 219, 219);
+}
+
+.reg {
+    width: 55%;
+    height: 57px;
+    border-radius: 10px;
+    border: 2px solid #496FD3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.reg:hover {
+    background-color: #496FD3;
+}
+
+.log {
+    color: white;
+    cursor: pointer;
+    width: 30%;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.log:hover {
+    color: #0A0A1D;
+    background-color: white;
+}

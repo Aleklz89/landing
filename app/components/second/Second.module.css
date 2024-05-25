@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+.main {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+}
+
+.title {
+    width: 80%;
+    height: 150px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.blueText {
+    color: #496FD3;
+}
+
+.whiteText {
+    color: white;
+}
+
+.table {
+    width: 80%;
+    height: 500px;
+}
+
+.row {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 44px;
+    color: white;
+    border-bottom: 2px solid rgba(73, 111, 211, 0.3);
+    font-family: 'IBM Plex Mono', monospace;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.end {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 44px;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    margin-left: -50%;
+    margin-top: -10%;
+}
+
+.blurredoval {
+    width: 800px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(16,36,66,0.6) 0%, rgba(16,36,66,0) 70%);
+    border-radius: 50%;
+    filter: blur(10px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 23%;
+    margin-top: -200px;
+}
