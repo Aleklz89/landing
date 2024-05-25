@@ -78,3 +78,20 @@
     color: #0A0A1D;
     background-color: white;
 }
+
+@media (max-width: 1150px) {
+    .navbar {
+        display: none;
+    }
+
+    .auth {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .cardimg {
+        width: 40px;
+        height: 35px;
+    }
+}

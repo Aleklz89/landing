@@ -207,3 +207,52 @@
     background: linear-gradient(#1f1d57, #1f1d57) padding-box,
         linear-gradient(to right, #4076C8, #2A27A4) border-box;
 }
+
+@media (max-width: 700px) {
+
+    .main {
+        height: 1000px;
+        margin-top: 600px;
+        margin-left: -50px;
+    }
+    
+    .card {
+        width: 500px;
+        height: 750px;
+        margin-left: 80px;
+    }
+
+    .cvv {
+        user-select: none;
+        color: #0E0D2F;
+        font-size: 110px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 120px;
+        animation: fadeInOut 12s infinite;
+    }
+    
+    .cvvtwo {
+        user-select: none;
+        color: transparent;
+        -webkit-text-stroke: 4px #0E0D2F;
+        font-size: 110px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: -225px;
+        animation: fadeInOut 12s infinite, moveUp 12s infinite;
+    }
+    
+    .cvvthree {
+        user-select: none;
+        color: transparent;
+        -webkit-text-stroke: 4px #0E0D2F;
+        font-size: 110px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: -350px;
+        margin-top: 50px;
+        animation: fadeInOut 12s infinite, moveDown 12s infinite;
+    }
+    
+}

@@ -11,8 +11,8 @@ function Header() {
                     <Image
                         src="/logo.svg"
                         alt="Logo"
-                        height="85"
-                        width="70"
+                        height={85}
+                        width={70}
                     />
                 </Link>
                 <div className={styles.navbar}>
