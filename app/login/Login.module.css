@@ -1,3 +1,11 @@
 .top {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width: 700px) {
+    .top {
+        height: 20px;
+    }
 }
