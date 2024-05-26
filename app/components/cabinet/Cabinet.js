@@ -18,7 +18,7 @@ function Cabinet() {
                             height="85"
                             width="70"
                         />
-                        <div className={styles.title}>Card shop</div>
+                        <div className={styles.title}>CVV888</div>
                     </div>
                     <div className={styles.blocktwo}>
                         <div className={styles.text}>Особистий кабінет</div>

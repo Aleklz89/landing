@@ -4,19 +4,6 @@
     margin-left: -50px;
 }
 
-@keyframes fadeInOut {
-
-    0%,
-    30%,
-    60%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 1;
-    }
-}
 
 @keyframes moveUp {
 
@@ -87,7 +74,6 @@
     align-items: center;
     justify-content: center;
     z-index: 10;
-    background-color: red;
     width: 100%;
     height: auto;
     margin-top: -350px;
@@ -209,50 +195,164 @@
 }
 
 @media (max-width: 700px) {
+    .cardbox {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        margin-top: -350px;
+        margin-left: -100px;
+    }
 
     .main {
         height: 1000px;
-        margin-top: 600px;
+        margin-top: 20px;
         margin-left: -50px;
+        overflow: hidden;
     }
     
     .card {
-        width: 500px;
-        height: 750px;
-        margin-left: 80px;
+        width: 350px;
+        height: 400px;
+        margin-left: 280px;
+        margin-bottom: -600px;
     }
 
     .cvv {
         user-select: none;
         color: #0E0D2F;
-        font-size: 110px;
+        font-size: 80px;
         font-weight: 700;
         text-align: center;
-        margin-top: 120px;
+        margin: 0;
+        margin-bottom: 200px;
         animation: fadeInOut 12s infinite;
+        margin-left: 50px;
     }
     
     .cvvtwo {
         user-select: none;
         color: transparent;
         -webkit-text-stroke: 4px #0E0D2F;
-        font-size: 110px;
+        font-size: 80px;
         font-weight: 700;
         text-align: center;
-        margin-top: -225px;
-        animation: fadeInOut 12s infinite, moveUp 12s infinite;
+        margin: 0;
+        margin-top: -295px;
+        margin-left: 50px;
     }
     
     .cvvthree {
         user-select: none;
         color: transparent;
         -webkit-text-stroke: 4px #0E0D2F;
-        font-size: 110px;
+        font-size: 80px;
         font-weight: 700;
         text-align: center;
-        margin-bottom: -350px;
-        margin-top: 50px;
-        animation: fadeInOut 12s infinite, moveDown 12s infinite;
+        margin: 0;
+        margin-top: 100px;
+        margin-bottom: -100px;
+        margin-left: 50px;
+    }
+    
+    .blob {
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(circle, #53519B 10%, transparent 70%);
+        border-radius: 50%;
+        filter: blur(50px);
+        position: relative;
+        overflow: hidden;
+        animation: float 6s infinite ease-in-out alternate;
+        margin: 0;
+        margin-top: -130px;
+    }
+    
+    .blobtwo {
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(circle, #53519B 10%, transparent 70%);
+        border-radius: 50%;
+        filter: blur(50px);
+        position: relative;
+        overflow: hidden;
+        animation: float 6s infinite ease-in-out alternate;
+        margin: 0;
+        margin-left: 250px;
+        margin-top: -150px;
+    }
+
+    @keyframes moveUp {
+
+        10%,
+        50%,
+        90%,
+        100% {
+            transform: translateY(0);
+        }
+    
+        30%,
+        70% {
+            transform: translateY(-100px);
+        }
+    }
+    
+    @keyframes moveDown {
+    
+        10%,
+        50%,
+        90%,
+        100% {
+            transform: translateY(0);
+        }
+    
+        30%,
+        70% {
+            transform: translateY(100px);
+        }
+    }
+
+    .text {
+        display: flex;
+        width: 100%;
+        margin-left: 70px;
+        margin-top: 600px;
+        height: 500%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .first {
+        height: 100%;
+        width: 100%;
+        font-size: 32px;
+        font-weight: 700;
+        color: white;
+        line-height: 42px;
+        margin-left: 0px;
+    }
+    
+    .second {
+        height: 100%;
+        width: 100%;
+        color: white;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .third {
+        width: 20%;
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
     }
     
 }

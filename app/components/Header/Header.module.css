@@ -4,6 +4,7 @@
     justify-content: center;
     width: 100%;
     height: 112px;
+    position: fixed;
 }
 
 .center {
@@ -15,7 +16,7 @@
     position: relative;
 }
 
-.navbar {
+.navbarone {
     display: flex;
     align-items: center;
     width: auto;
@@ -79,8 +80,261 @@
     background-color: white;
 }
 
+
+
+
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282838;
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navmenu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.navmenu a:hover {
+    color: #aaa;
+}
+
+.navactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginbtn,
+.signupbtn {
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginbtn {
+    background-color: transparent;
+    color: white;
+}
+
+.signupbtn {
+    background-color: rgb(181, 181, 34);
+    color: white;
+}
+
+.loginbtn:hover {
+    background-color: white;
+    color: #333;
+}
+
+.signupbtn:hover {
+    background-color: rgb(201, 198, 198);
+}
+
+
+.sidemenu {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    left: 120%;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.sidemenu.show {
+    transform: translateX(-80%);
+}
+
+.button {
+    display: none;
+    z-index: 6;
+    position: fixed;
+    right: 0;
+    top: 20px;
+}
+
+
+
+.menu {
+    margin-top: 310px;
+    width: 250px;
+    padding: 20px;
+    margin-left: 5px;
+    background-color: #282838;
+    height: 120vh;
+    box-sizing: border-box;
+    color: white;
+    z-index: 100000;
+    position: absolute;
+}
+
+.closebutton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    float: right;
+    cursor: pointer;
+}
+
+.menuitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+    width: 200px;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right,
+            transparent,
+            #59596f,
+            transparent) 1;
+    color: white;
+}
+
+.menuitem:last-child {
+    border-bottom: none;
+}
+
+.menuitem:hover {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    background: none;
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+    text-align: center;
+}
+
+.login {
+    background-color: #00bfa5;
+}
+
+.sidepar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.logobox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto; 
+    color: white;
+  }
+
+.logosmall {
+    margin-right: 15px;
+    border-radius: 10px;
+    width: 65px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.loginbtntwo,
+.signupbtntwo {
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginbtntwo {
+    background-color: transparent;
+    color: white;
+}
+
+.signupbtntwo {
+    background-color: white;
+    color: black;
+}
+
+.loginbtntwo:hover {
+    background-color: white;
+    color: #333;
+}
+
+.signupbtntwo:hover {
+    background-color: #496FD3;
+    color: white;
+}
+
+.flag {
+    margin-left: 10px;
+}
+
+
+
+@media (max-width: 890px) {
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        position: fixed; /* Или absolute, в зависимости от потребностей */
+        z-index: 9999; /* Высокий z-index, чтобы элемент был поверх других */
+    }
+    
+
+    .navmenu,
+    .navactions {
+        display: none;
+    }
+
+
+    .button {
+        display: block;
+        position: fixed;
+        z-index: 6;
+        right: 0;
+        top: 15px;
+        margin-right: 20px;
+    }
+
+
+    
+}
+
+
 @media (max-width: 1150px) {
-    .navbar {
+    .navbarone {
         display: none;
     }
 
@@ -93,5 +347,10 @@
     .cardimg {
         width: 40px;
         height: 35px;
+    }
+
+    .img {
+        width: 50px;
+        height: 50px;
     }
 }

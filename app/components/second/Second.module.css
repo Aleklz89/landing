@@ -80,3 +80,98 @@
     margin-left: 23%;
     margin-top: -200px;
 }
+
+@media (max-width: 700px) {
+    .main {
+        margin-left: 50px;
+        width: 80%;
+        height: 1000px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .left {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .right {
+        width: 50%;
+        height: 100%;
+    }
+
+    .title {
+        width: 150%;
+        height: 110px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-left: 220px;
+    }
+
+    .table {
+        width: 100%;
+        height: 500px;
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+
+    .row {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 44px;
+        color: white;
+        border-bottom: 2px solid rgba(73, 111, 211, 0.3);
+        font-family: 'IBM Plex Mono', monospace;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .end {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 44px;
+        color: white;
+        font-family: 'IBM Plex Mono', monospace;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .right {
+        width: 50%;
+        height: 100%;
+        margin-left: -300px;
+    }
+
+    .card {
+        margin-left: -120%;
+        height: 500px;
+        width: 500px;
+        margin-top: 450px;
+    }
+
+    .blurredoval {
+        width: 400px;
+        height: 50px;
+        background: radial-gradient(circle, rgba(16,36,66,0.6) 0%, rgba(16,36,66,0) 70%);
+        border-radius: 50%;
+        filter: blur(10px);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin-left: 30%;
+        margin-top: -100px;
+    }
+
+    .img {
+        width: 50px;
+        height: 50px;
+    }
+    
+}

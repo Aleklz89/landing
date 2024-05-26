@@ -12,6 +12,7 @@ function Header() {
                     alt="Logo"
                     height="85"
                     width="70"
+                    className={styles.img}
                 />
                 <div className={styles.navbar}>
                     <Link href="/agreement" style={{ textDecoration: 'none' }}>
