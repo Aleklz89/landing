@@ -6,8 +6,9 @@ function Second() {
     return (
         <div className={styles.main}  id="section1">
             <div className={styles.left}>
-                <div className={styles.title}>blueText
-                    <span className={styles.whiteText}>Чому вартно обрати нас?</span>
+                <div className={styles.title}>
+                    <span className={styles.whiteText}>Чому вартно обрати</span>
+                    <span className={styles.blueText}> нас?</span>
                 </div>
                 <div className={styles.table}>
                     <div className={styles.row}>1. Швидкий та приємний саппорт</div>
