@@ -45,7 +45,7 @@ function Four() {
                     </div>
                     <div className={styles.text}>
                         Поповнюйте баланс зручним
-                        для вас способом
+                        для вас методом
                     </div>
                 </div>
                 <div className={styles.card}>
