@@ -152,6 +152,20 @@
     margin-bottom: 30px;
 }
 
+@media (max-width: 1300px) {
+    .reg {
+        font-size: 17px;
+    }
+
+    .right {
+        text-align: justify;
+    }
+
+    .left {
+        font-size: 55px;
+    }
+}
+
 @media (max-width: 700px) {
 
     .main {

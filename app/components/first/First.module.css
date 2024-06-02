@@ -195,6 +195,15 @@
         linear-gradient(to right, #4076C8, #2A27A4) border-box;
 }
 
+@media (max-width: 1300px) {
+    
+    .text {
+        width: 82%;
+    }
+
+
+}
+
 @media (max-width: 700px) {
     .cardbox {
         position: absolute;
