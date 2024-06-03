@@ -196,9 +196,31 @@
 }
 
 @media (max-width: 1300px) {
+
+    .main {
+
+        margin-left: -50px;
+    
+    }
     
     .text {
         width: 82%;
+    }
+
+    .cvv {
+        font-size: 250px;
+    }
+    
+    .cvvtwo {
+        font-size: 250px;
+    }
+    
+    .cvvthree {
+        font-size: 250px;    
+    }
+
+    .card {
+        margin-top: 100px;
     }
 
 
