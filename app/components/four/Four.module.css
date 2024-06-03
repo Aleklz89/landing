@@ -97,6 +97,12 @@
     font-size: 20px;
 }
 
+@media (max-width: 1400px) { 
+    .cube {
+        margin-left: -240px;
+    }
+}
+
 @media (max-width: 1300px) {
     .cube {
         margin-left: -290px;
@@ -106,6 +112,13 @@
         width: 110%;
         margin-left: -5%;
     }
+}
+
+@media (max-width: 1100px) { 
+    .main {
+        height: 1700px;
+    }
+
 }
 
 @media (max-width: 700px) {

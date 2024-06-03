@@ -204,6 +204,12 @@
 
 }
 
+@media (max-width: 1100px) { 
+ .card {
+    margin-left: 150px;
+ }
+}
+
 @media (max-width: 700px) {
     .cardbox {
         position: absolute;
