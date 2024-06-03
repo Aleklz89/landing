@@ -179,18 +179,7 @@
 
 
 
-.menu {
-    margin-top: 310px;
-    width: 250px;
-    padding: 20px;
-    margin-left: 5px;
-    background-color: #282838;
-    height: 120vh;
-    box-sizing: border-box;
-    color: white;
-    z-index: 100000;
-    position: absolute;
-}
+
 
 .closebutton {
     background-color: transparent;
@@ -251,9 +240,9 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    overflow-x: auto; 
+    overflow-x: auto;
     color: white;
-  }
+}
 
 .logosmall {
     margin-right: 15px;
@@ -310,8 +299,10 @@
         justify-content: center;
         width: 90%;
         height: 50px;
-        position: fixed; /* Или absolute, в зависимости от потребностей */
-        z-index: 9999; /* Высокий z-index, чтобы элемент был поверх других */
+        position: fixed;
+        /* Или absolute, в зависимости от потребностей */
+        z-index: 9999;
+        /* Высокий z-index, чтобы элемент был поверх других */
     }
 
 
@@ -351,7 +342,7 @@
     }
 
 
-    
+
 }
 
 
@@ -388,5 +379,48 @@
         color: white;
         z-index: 100000;
         position: absolute;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .menu {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 950px) and (max-height: 420px) {
+    .button {
+        display: flex;
+        right: 5%;
+    }
+
+
+}
+
+
+@media (max-width: 450px) and (max-height: 950px) {
+
+    .button {
+        display: flex;
+        right: 6%;
+    }
+    .menu {
+        margin-top: 380px;
+        width: 250px;
+        padding: 20px;
+        margin-left: -30px;
+        background-color: #282838;
+        height: 120vh;
+        box-sizing: border-box;
+        color: white;
+        z-index: 100000;
+        position: fixed;
+    }
+
+    .img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0px;
     }
 }
